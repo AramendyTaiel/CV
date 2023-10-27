@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Curriculum Vitae</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+    <link rel="stylesheet" href="estilos/style.css">
+
+	<style type="text/css">
+		
+		p{
+			text-align: justify;
+		}
+		@media only screen and (max-width: 768px) and (min-height: 200px) {
+		img{
+			height: 150px;
+			margin: 0px auto;
+			padding: ;
+			display: block;
+		}
+		#datos_p{
+			text-align: center;
+			margin-top: 15px; 
+		}}
+		.center{
+			text-align: center;
+		}
+		footer{
+			margin: 10px;
+		}
+		link{
+			color: blue;
+		}
+
+		a{
+			color: #0066ff;
+			text-decoration: none;
+		}
+		a:hover{  
+			color: #80b3ff;
+			text-decoration: none;
+		}
+
+		/*modal
+
+
+		*/
+
+		.hero__cta{
+		    text-decoration: none;
+		    color: #000000;
+		    padding: 2.5px 25px;
+		    border: 1px solid;
+		    border-radius: 6px;
+		    display: inline-block;
+		    text-align: center;	
+		   	width: 100%;
+		    transition: background-color .3s;
+		    font-weight: 400;		    
+		    	  
+  			/*  			
+  			 
+  			*/
+		}
+
+		.hero__cta:hover{
+		    background-color: #fff;
+		    color: #1e3c72;
+		}
+
+		.hero__img{
+		    width: 100%;
+		}
+		.modal{
+		    position: fixed;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		    bottom: 0;
+		    background-color: #111111bd;
+		    display: flex;
+		    opacity: 0;
+		    pointer-events: none;
+		    transition: opacity .4s .7s;
+		    --transform: translateY(-100vh);
+		    --transition: transform .8s;
+		}
+
+		.modal--show{
+		    opacity: 1;
+		    pointer-events: unset;
+		    transition: opacity .4s;
+		    --transform: translateY(0);
+		    --transition: transform .6s .6s;
+		}
+
+		.modal__container{
+		    margin: auto; /*auto*/
+		    width: 90%;
+		    max-width: 55%; /*900px*/
+		    max-height: 90%; /*90%*/
+		    /*background-color: #fff;*/
+		    border-radius: 6px;
+		    padding: 2em; /* padding: 3em 2.5em;*/
+		    display: grid;
+		    gap: 0.3em;
+		    place-items: center;
+		    grid-auto-columns: 100%;
+		    transform: var(--transform);
+		    transition:var(--transition);
+		}	
+
+		.modal__title{
+		    font-size: 2.5rem;
+		}
+
+		.modal__paragraph{
+		    margin-bottom: 5px;
+		}
+
+		.modal__img{
+		    width: 110%;
+		    max-width: 3000px;
+		}
+
+		.modal__close{
+		    text-decoration: none;
+		    color: #fff;
+		    background-color: #F26250;
+		    padding: 0.8em 2em; /*padding: 1em 3em;*/
+		    border: 1px solid ;
+		    border-radius: 6px;
+		    display: inline-block;
+		    font-weight: 200;
+		    transition: background-color .3s;
+		}
+
+		.modal__close:hover{
+		    color: #F26250;
+		    background-color: #fff;
+		}
+
+	</style>
+</head>
+<body>
+	<header> <!-- id= "up" -->		
+		<section class="container border-top border-danger">
+			<article class="row">
+				<div class="col-lg-6 col-md-6 col-12">										
+					<img class="mt-2 mx-auto d-block img-fluid" src="IMG/fotoOrg.jpg" alt="fotoOrg" border="0" width="300" height="300"> 
+				</div>
+				<div class="col-lg-6 col-md-6 col-12 text-secondary" id="datos_p">
+					<h1 class="text-dark">Aramendy Ortega Taiel</h1>
+					<h6 class="text-secondary"><b>Técnico informático y Programador (Junior)</b></h2>
+
+					<div class="text-dark" id="iii">				
+
+						<script type="text/javascript">
+							/*let global = new parseInt;*/
+
+						    var f_nac = new Date('2000-12-24');
+							var hoy = new Date();
+							var edad = parseInt((hoy - f_nac) / (1000*60*60*24*365));
+
+							document.getElementById("iii").innerHTML = "<br><b>Zona de residencia</b>: Buenos Aires, Argentina<br> <b>Telefono</b>: --- <br> <b>Edad</b>: " + edad + " años<br> <br>";
+
+						</script>											
+						<b>Instagram</b>: <a href='https://www.instagram.com/taiel.tic/' target="_blank">@Taiel.TIC</a><br> 				
+						<b>LinkedIn</b>: <a href='https://www.linkedin.com/in/aramendy-ortega-taiel/' target="_blank">Ingresar</a><br>
+						<b>GitHub</b>: <a href='https://github.com/AramendyTaiel' target="_blank">Ingresar</a><br>
+
+						<br><b>Linktree</b>: <a href='https://linktr.ee/aramendy_ortega_taiel' target="_blank">Ingresar</a><br>
+						<!--<b>Portafolio/Proyectos</b>: <a href='https://github.com/AramendyTaiel' target="_blank">Ingresar</a><br>-->
+
+					</div> 
+				</div>
+			</article>
+		</section>
+	</header>
+	<nav class="center" id="up"> 
+		<section class="container card bg-dark mt-2"> <!--<section class="container card bg-dark mt-2"> -->
+			<article class="row" > 
+				<div class="col-lg-3 col-md-6 col-12 btn btn-dark">
+						<a href="#ancla1" class="text-light"> <i class="fas fa-book"><h5>Formación Académica</h5></i> </a> 
+				</div>
+				<div class="col-lg-3 col-md-6 col-12 btn btn-dark">
+						<a href="#ancla2" class="text-light"><i class="fas fa-briefcase"><h5>Experiencia Laboral</h5></i></a>
+				</div>
+				<div class="col-lg-3 col-md-6 col-12 btn btn-dark">
+						<a href="#ancla3" class="text-light"><i class="fas fa-laptop"><h5>Herramientas Informáticas</h5></i> </a>
+				</div>
+				<div class="col-lg-3 col-md-6 col-12 btn btn-dark">
+						<a href="#ancla4" class="text-light"><i class="fas fa-comments"><h5>Cursos</h5></i></a>
+				</div>	 									
+			</article>
+		</section>
+	</nav>
+	<section> 
+		<section class="container">
+			<article class="row">
+								
+				<div class="col-lg-6 col-md-6 col-12 mt-2"> 
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title text-danger" id="ancla1">Formación Académica:</h5>
+							<p class="card-text "><b>2014 - 2016 </b> Estudios secundarios. Escuela Técnica con especilidad en Mecánica. Escuela Técnica Nº 23 D.E. 13 "Casal Calviño". </p>
+
+							<p class="card-text "><b>2016 - 2020</b> Estudios secundarios. Escuela Técnica Informática especializada en Programación. Escuela Técnica Nº 35 D.E. 18 "Ingeniero Eduardo Latzina". </p>
+
+
+							<a href="#" class="hero__cta" id="cod" value="i1">Diploma</a>									
+
+							<!--
+								FACULTAD - CURSOS ACTUAL SEGURIDAD INFORMÁTICA
+							-->
+
+							<a class="d-sm-block d-md-none btn btn-outline-primaty" href="#up">Ir al Inicio</a>
+						</div>
+					</div>
+				</div>
+
+				
+				<div class="col-lg-6 col-md-6 col-12 mt-2">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title text-danger" id="ancla2">Experiencia Laboral:</h5>							
+							<ul class="card-text">	
+								<li>Construcción e instalación de muebles.</li>
+								<li>Instalaciones y reparaciones eléctricas en hogares.</li>
+								<li>Reparación de componentes electrónicos.</li>	
+								<li><b>Actualidad:</b> Service Técnico (Autónomo): Armado, reparación y mantenimiento de computadoras portátiles y de escritorio.</li> <!--(Hardware & Software)-->
+								<li><b>Actualidad:</b> Programación y administración de páginas web.</li>
+
+							</ul>
+							<a class="d-sm-block d-md-none btn btn-outline-primaty" href="#up">Ir al Inicio </a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6 col-md-6 col-12 mt-2"> <!-- <div class="col-lg-6 col-md-6 col-12 mt-2"> -->
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title text-danger" id="ancla3">Lenguajes:</h5>
+							<ul class="card-text">
+								<li>Visual Basic</li>
+								<li>Java</li>
+								<li>MySQL / SQL Server</li>
+								<li>JavaScript</li>
+								<li>HTML5</li>
+								<li>CSS3</li>
+								<li>C</li>								
+								<li>C#</li>
+								<li>C++</li>
+								<li>Processing</li>
+								<li>Arduino</li>								
+								<li>Kotlin (Android)</li>
+								<li>AutoCAD 2D & 3D</li>
+								<li>Python</li>
+
+								<li><b>(In learning)</b> NodeJS , WordPress, PHP</li>
+							</ul>
+							<a class="d-sm-block d-md-none btn btn-outline-primaty" href="#up">Ir al Inicio </a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6 col-md-6 col-12 mt-2"> <!-- <div class="col-lg-6 col-md-6 col-12 mt-2"> -->
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title text-danger" id="ancla3">Herramientas Informáticas:</h5>
+							<ul class="card-text">
+								<li>Paquete Office</li>							
+								<li>Click Charts (Diseño Diagramación)</li>								
+								<li>Pronterface (Control CNC / Impresión 3D)</li>
+								<li>Slic3r (Impresión 3D)</li>								
+								<li>BootsTrap (Diseño Web)</li>
+								<li>XAMPP (SGBD)</li>
+								<li>GIT / GitHub</li>
+
+								<li><b>(In learning)</b> PacketTracer, Kali-Linux</li>
+							</ul>							
+							<a class="d-sm-block d-md-none btn btn-outline-primaty" href="#up">Ir al Inicio </a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-12 col-md-12 col-12 mt-2">
+					<!--<h5>Idioma(s)</h5>-->
+					<div class="card">
+						<div class="card-body">
+							<h5 class="text-title text-danger" id="ancla4">Cursos:</h5>
+							<ul class="card-text">
+								<li><b>Agosto - Semptiembre 2018</b> Aprendé Programando. Ministerio de Educación e Innovación de la Ciudad Autónoma de Buenos Aires. Conocimientos adquiridos: <b>HTML, CSS y Bootstrap</b>.</li>
+								<li><b>Agosto - Semptiembre 2019</b> Aprendé Programando. Ministerio de Educación e Innovación de la Ciudad Autónoma de Buenos Aires. Conocimientos adquiridos: <b>JavaScript</b>. </li>
+								<li><b>Agosto - Semptiembre 2020</b> Aprendé Programando. Ministerio de Educación e Innovación de la Ciudad Autónoma de Buenos Aires. Conocimientos adquiridos: <b>Back-End</b>. </li>
+								<li><b>Agosto - Semptiembre 2020</b> Aprendé Programando. Ministerio de Educación e Innovación de la Ciudad Autónoma de Buenos Aires. Conocimientos adquiridos: <b>Front-End</b>. </li>
+								<li><b>Mayo - Agosto 2023</b> Fundación Movistar - Conecta Empleo. Curso avanzado de <b>Ciberseguridad</b>. 
+									Conocimientos adquiridos: Redes y manejo del Packet Tracer, aplicaciones técnicas, seguridad Wireless, Kali-Linux, Python orientado, Criptografía y esteganografía, Análisis forense, Hacking ético, Metasploit, entre otros.
+								</li>
+								<li>
+									<b>Junio - Julio 2023</b> Consultora ARPAC-IT - Curso intensivo de <b>OSINT</b>:
+									Conceptos y fuentes abiertas; Manejo de tools OSINT; Análisis de la información; Métodos de búsqueda.
+								</li>
+								<li>
+									<b>Agosto - Septiembre 2023</b> Consultora ARPAC-IT - Curso avanzado de <b>Ethical Hacking</b>:
+									Fundamentos Metodológicos; Etapa de Reconocimiento / Footprinting; Etapa de Escaneo / Análisis de Vulnerabilidades; Etapa de Enumeración / Análisis de tráfico; System Hacking / DOS; Hacking Web / Scripting; Ingeniería Social; Metasploit.									
+								</li>
+								<li>
+									<b>Octubre - Actualidad 2023</b> Consultora ARPAC-IT - Curso avanzado de <b>Análisis Forense</b>:
+									Fundamentos Metodológicos; Análisis y procesamiento de evidencias; Forense Linux&Redes; Esteganografía y análisis de estructura de datos; Forense Dispositivos Móviles ; Análisis profesional de RAM; Métodos de recuperación; Busqueda de pistas.						
+								</li>
+								<li>
+									<b>Julio - Actualidad 2023</b> Programación Codo a Codo 3.0. Ministerio de Educación e Innovación de la Ciudad Autónoma de Buenos Aires. Conocimientos adquiridos: <b>Node.js</b>.
+								</li>
+
+							</ul>
+							<a class="d-sm-block d-md-none btn btn-outline-primaty" href="#up">Ir al Inicio </a>
+						</div>
+					</div>
+				</div>
+
+			</article>
+		</section>
+	</section>
+
+
+	<section class="modal ">
+
+        <div class="modal__container">
+
+            <img href="#" src="IMG/Diploma.png" alt="Diploma" class="modal__img">
+            <!--<img href="#" src="IMG/Cursos/1CursoAP WebN1.jpg" alt="1CursoAP WebN1" class="modal__img">-->
+
+            <a href="#" class="modal__close" >Cerrar</a>
+        </div>
+    </section>  
+    <script src="js/main.js"></script>
+
+
+
+	<footer class="container bg-dark text-white">
+
+		<p id="final" class="p-2">
+		    <script>    	
+		        hoy = new Date();
+		        year = hoy.getFullYear();
+
+		    	document.getElementById("final").innerHTML = "Copyright © " + year + " - Desarrollado por: <b class=' text-danger'>Aramendy O. Taiel</b>";
+
+		    </script>
+		    <!-- document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year; -->
+		</p>
+	</footer>
+
+</body>
+</html>
