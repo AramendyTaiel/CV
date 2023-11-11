@@ -16,6 +16,11 @@
 		p{
 			text-align: justify;
 		}
+
+		#final{
+			text-align: right;
+		}
+
 		@media only screen and (max-width: 768px) and (min-height: 200px) {
 		img{
 			height: 150px;
@@ -474,7 +479,9 @@
 		        hoy = new Date();
 		        year = hoy.getFullYear();
 
-		    	document.getElementById("final").innerHTML = "Copyright © " + year + " - Desarrollado por: <b class=' text-danger'>Aramendy O. Taiel</b>";
+		    	document.getElementById("final").innerHTML = "Copyright © " + year ;
+
+		    	/*<b class=' text-danger'>Aramendy O. Taiel</b>*/
 
 		    </script>
 		    <!-- document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year; -->
