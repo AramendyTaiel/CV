@@ -7,7 +7,8 @@
 	<title>Curriculum Vitae</title>
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"> -->
     <link rel="stylesheet" href="estilos/style.css">
 
 	<style type="text/css">
@@ -45,12 +46,10 @@
 			text-decoration: none;
 		}
 
-		/*modal
-
-
-		*/
+		/*modal*/
 
 		.hero__cta{
+
 		    text-decoration: none;
 		    color: #000000;
 		    padding: 2.5px 25px;
@@ -61,15 +60,15 @@
 		   	width: 100%;
 		    transition: background-color .3s;
 		    font-weight: 400;		    
-		    	  
+		    	  			
   			/*  			
   			 
   			*/
 		}
 
 		.hero__cta:hover{
-		    background-color: #fff;
-		    color: #1e3c72;
+		    background-color: #fff; 
+		    color: #1e3c72;	    		     
 		}
 
 		.hero__img{
@@ -99,9 +98,9 @@
 		}
 
 		.modal__container{
-		    margin: auto; /*auto*/
+		    margin: auto; /*auto*/		    
 		    width: 90%;
-		    max-width: 55%; /*900px*/
+		    max-width: 58%; /*900px - 55%*/
 		    max-height: 90%; /*90%*/
 		    /*background-color: #fff;*/
 		    border-radius: 6px;
@@ -112,6 +111,9 @@
 		    grid-auto-columns: 100%;
 		    transform: var(--transform);
 		    transition:var(--transition);
+
+		    margin-top: 0px;
+		    padding-top: 20px;
 		}	
 
 		.modal__title{
@@ -128,21 +130,77 @@
 		}
 
 		.modal__close{
-		    text-decoration: none;
-		    color: #fff;
-		    background-color: #F26250;
-		    padding: 0.8em 2em; /*padding: 1em 3em;*/
-		    border: 1px solid ;
+		    color: white;
+		    background-color: #2A2727;	      
+		    padding: 0.8em 3em; /*padding: 1em 3em;*/
+		    /*border: 1px solid ;*/
 		    border-radius: 6px;
 		    display: inline-block;
-		    font-weight: 200;
+		    font-weight: 100 bold;
 		    transition: background-color .3s;
 		}
 
 		.modal__close:hover{
-		    color: #F26250;
-		    background-color: #fff;
+		    color: white;
+		    background-color: black;
 		}
+
+		/*HOVER IMG*/
+	*{
+	    box-sizing: border-box;
+	}
+	 
+	body{
+	    width: 100%;
+	    margin: 0;
+	    padding: 0;
+	}
+	 
+	.ctr-accordion{
+	    max-width: 1100px;
+	    height: 560px;
+	    display: flex;
+	    flex-direction: row;
+	    align-items: center;
+	    align-content: space-around;
+	    gap: 10px;
+	    overflow: hidden;
+	    margin: 30px auto;
+	}
+	 
+	.tab{
+	    position: relative; /*relative*/
+	    width: 20%;
+	    height: inherit;
+	    padding: 20px;
+	    background: rgb(150,150,150);
+	    cursor: pointer;
+	    transition: width .5s ease;
+	    border-radius: 5px;
+	}
+	 
+	.tab img{
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    object-fit: cover;
+	    transition: all 0.5s ease;
+	    border-radius: 5px;
+
+	    /*border: 0.02px solid black;*/
+	}
+	 
+	.tab:hover img{
+	    opacity: 0.9;
+	    width: 100%;
+	}
+	 
+	.tab:hover{
+	    width: 100%;
+	}
+
 
 	</style>
 </head>
@@ -157,8 +215,7 @@
 					<h1 class="text-dark">Aramendy Ortega Taiel</h1>
 					<h6 class="text-secondary"><b>Técnico informático y Programador (Junior)</b></h2>
 
-					<div class="text-dark" id="iii">				
-
+					<div class="text-dark" id="iii">
 						<script type="text/javascript">
 							/*let global = new parseInt;*/
 
@@ -166,14 +223,15 @@
 							var hoy = new Date();
 							var edad = parseInt((hoy - f_nac) / (1000*60*60*24*365));
 
-							document.getElementById("iii").innerHTML = "<br><b>Zona de residencia</b>: Buenos Aires, Argentina<br> <b>Telefono</b>: --- <br> <b>Edad</b>: " + edad + " años<br> <br>";
+							document.getElementById("iii").innerHTML = "<br><i class='fa-solid fa-house'></i><b> Zona de residencia</b>: <a href='https://www.google.com.ar/maps/place/Provincia+de+Buenos+Aires/@-37.0322241,-65.3157263,6z/data=!3m1!4b1!4m6!3m5!1s0x95edbcb7595281d9:0x4ad309fcdcf0a144!8m2!3d-37.2017285!4d-59.8410697!16zL20vMDFseThk?entry=ttu' target='_blank'> Buenos Aires, Argentina</a> <br> <i class='fa-solid fa-phone'></i> <b>Telefono</b>: --- <br> <i class='fa-solid fa-user'></i> <b>Edad</b>: " + edad + " años<br> <br>";
 
 						</script>											
-						<b>Instagram</b>: <a href='https://www.instagram.com/taiel.tic/' target="_blank">@Taiel.TIC</a><br> 				
-						<b>LinkedIn</b>: <a href='https://www.linkedin.com/in/aramendy-ortega-taiel/' target="_blank">Ingresar</a><br>
-						<b>GitHub</b>: <a href='https://github.com/AramendyTaiel' target="_blank">Ingresar</a><br>
+						<i class="fa-brands fa-instagram"></i> <b> Instagram</b>: <a href='https://www.instagram.com/taiel.tic/' target="_blank">@Taiel.TIC</a><br> 				
+						<i class="fa-brands fa-linkedin"></i><b> LinkedIn</b>: <a href='https://www.linkedin.com/in/aramendy-ortega-taiel/' target="_blank">Ingresar</a><br>
+						<i class="fa-brands fa-github"></i><b> GitHub</b>: <a href='https://github.com/AramendyTaiel' target="_blank">Ingresar</a><br>
+						
 
-						<br><b>Linktree</b>: <a href='https://linktr.ee/aramendy_ortega_taiel' target="_blank">Ingresar</a><br>
+						<br> <i class="fa-regular fa-clipboard"></i><b> Linktree</b>: <a href='https://linktr.ee/aramendy_ortega_taiel' target="_blank">Ingresar</a><br>
 						<!--<b>Portafolio/Proyectos</b>: <a href='https://github.com/AramendyTaiel' target="_blank">Ingresar</a><br>-->
 
 					</div> 
@@ -185,16 +243,16 @@
 		<section class="container card bg-dark mt-2"> <!--<section class="container card bg-dark mt-2"> -->
 			<article class="row" > 
 				<div class="col-lg-3 col-md-6 col-12 btn btn-dark">
-						<a href="#ancla1" class="text-light"> <i class="fas fa-book"><h5>Formación Académica</h5></i> </a> 
+						<a href="#ancla1" class="text-light"> <i class="fas fa-book"></i><h5>Formación Académica</h5></a> 
 				</div>
 				<div class="col-lg-3 col-md-6 col-12 btn btn-dark">
-						<a href="#ancla2" class="text-light"><i class="fas fa-briefcase"><h5>Experiencia Laboral</h5></i></a>
+						<a href="#ancla2" class="text-light"><i class="fas fa-briefcase"></i><h5>Experiencia Laboral</h5></a>
 				</div>
 				<div class="col-lg-3 col-md-6 col-12 btn btn-dark">
-						<a href="#ancla3" class="text-light"><i class="fas fa-laptop"><h5>Herramientas Informáticas</h5></i> </a>
+						<a href="#ancla3" class="text-light"><i class="fas fa-laptop"></i><h5>Herramientas Informáticas</h5> </a>
 				</div>
 				<div class="col-lg-3 col-md-6 col-12 btn btn-dark">
-						<a href="#ancla4" class="text-light"><i class="fas fa-comments"><h5>Cursos</h5></i></a>
+						<a href="#ancla4" class="text-light"><i class="fas fa-comments"></i><h5>Cursos</h5></a>
 				</div>	 									
 			</article>
 		</section>
@@ -212,7 +270,7 @@
 							<p class="card-text "><b>2016 - 2020</b> Estudios secundarios. Escuela Técnica Informática especializada en Programación. Escuela Técnica Nº 35 D.E. 18 "Ingeniero Eduardo Latzina". </p>
 
 
-							<a href="#" class="hero__cta" id="cod" value="i1">Diploma</a>									
+							<a href="#" class="hero__cta bg-dark text-white" id="cod" value="i1">Diploma <i class="fa fa-graduation-cap" aria-hidden="true"></i></a>									
 
 							<!--
 								FACULTAD - CURSOS ACTUAL SEGURIDAD INFORMÁTICA
@@ -232,8 +290,11 @@
 								<li>Construcción e instalación de muebles.</li>
 								<li>Instalaciones y reparaciones eléctricas en hogares.</li>
 								<li>Reparación de componentes electrónicos.</li>	
-								<li><b>Actualidad:</b> Service Técnico (Autónomo): Armado, reparación y mantenimiento de computadoras portátiles y de escritorio.</li> <!--(Hardware & Software)-->
-								<li><b>Actualidad:</b> Programación y administración de páginas web.</li>
+								<li><b>Actualidad:</b> <a href='https://www.instagram.com/taiel.tic/' target="_blank"><i class="fa-brands fa-instagram"></i></a> Service Técnico (Autónomo): Armado, reparación y mantenimiento de computadoras portátiles y de escritorio.</li> <!--(Hardware & Software)-->
+								  
+								<li><b>Actualidad:</b> <a href='https://github.com/AramendyTaiel' target="_blank"><i class="fa-brands fa-github"></i></a> Programación y administración de páginas web.</li>
+
+
 
 							</ul>
 							<a class="d-sm-block d-md-none btn btn-outline-primaty" href="#up">Ir al Inicio </a>
@@ -332,13 +393,77 @@
 
         <div class="modal__container">
 
-            <img href="#" src="IMG/Diploma.png" alt="Diploma" class="modal__img">
-            <!--<img href="#" src="IMG/Cursos/1CursoAP WebN1.jpg" alt="1CursoAP WebN1" class="modal__img">-->
+            <img href="#" src="IMG/Diploma.png" alt="Diploma" class="modal__img">            
 
             <a href="#" class="modal__close" >Cerrar</a>
         </div>
     </section>  
     <script src="js/main.js"></script>
+
+    <section>
+    	<div class="ctr-accordion">
+            <div class="tab">
+                <img src="IMG/Cursos/1CursoAP WebN1.jpg">
+                <!--<img href="#" src="IMG/Cursos/1CursoAP WebN1.jpg" alt="1CursoAP WebN1" class="modal__img">-->
+            </div>
+            <div class="tab">
+                <img src="IMG/Cursos/2CursoAP WebN2.jpg">
+            </div>
+            <div class="tab">
+                <img src="IMG/Cursos/3CursoAP WebN3.jpg">
+            </div>
+            <div class="tab">
+                <img src="IMG/Cursos/4CursoAP WebN3.jpg">
+            </div>
+            <div class="tab">
+                <img src="IMG/Cursos/Ciberseguridad-ED15.png">
+            </div>                        
+       </div>
+   </section>
+
+   <section>
+   		<div class="ctr-accordion"> 
+   			<div class="tab">
+                <img src="IMG/Cursos/Introducción Ciberseguridad.png">
+            </div>
+            <div class="tab">
+                <img src="IMG/Cursos/Introducción Tecnologías.png">
+            </div>
+            <div class="tab">
+                <img src="IMG/Eventos/5CyberSecurityRevolutión.jpg">
+            </div>
+            <div class="tab">
+                <img src="IMG/Eventos/6Data Science - AWS (Amazon).jpg">
+            </div>
+            <div class="tab">
+                <img src="IMG/Eventos/7MegaTestingWee.jpg">
+            </div>
+   		</div>
+   </section>
+
+   <section>
+       <div class="ctr-accordion">            
+            <div class="tab">
+                <img src="IMG/Eventos/8Participación al Taller Machine Learning con Python.jpg">
+            </div>
+            <div class="tab">
+                <img src="IMG/Eventos/9Participación AmaliaConf 2020.jpg">
+            </div>
+            <div class="tab">
+                <img src="IMG/Eventos/pentesting.jpg">
+            </div>
+            <div class="tab">
+                <img src="IMG/Eventos/Peritaje Forence.jpg">
+            </div>
+            <div class="tab">
+                <img src="IMG/Eventos/Quality Assurance.jpg">
+            </div>
+            <div class="tab">
+                <img src="IMG/Eventos/Consultor SAP.jpg">
+            </div>
+       </div>
+    </section>   
+
 
 
 
