@@ -12,6 +12,160 @@
     <link rel="stylesheet" href="estilos/style.css">
 
 	<style type="text/css">
+
+		.resolucion {
+		    width: 99%;
+		    text-align: center;
+		}
+
+
+		/**Movil**/
+
+		@media (max-width: 767px) {
+			#cod{
+				display: none;
+			}
+
+
+			/**********************/
+		    .desktop {
+		        display: none;
+		    }
+		    .tablet {
+		        display: none;
+		    }
+		}
+
+
+		/**Tablet**/
+
+		@media (min-width: 768px) and (max-width: 990px) {
+			#cod{
+				display: none;
+			}
+
+
+			/****************************/
+		    .desktop {
+		        display: none;
+		    }
+		    .movil {
+		        display: none;
+		    }
+		}
+
+
+		/**Escritorio**/
+
+		@media (min-width: 991px) {
+
+			/*MODAL*/
+
+
+
+			.hero__cta{
+
+			    text-decoration: none;
+			    color: #000000;
+			    padding: 2.5px 25px;
+			    border: 1px solid;
+			    border-radius: 6px;
+			    display: inline-block;
+			    text-align: center;	
+			   	width: 100%;
+			    transition: background-color .3s;
+			    font-weight: 400;	
+			}
+
+			.hero__cta:hover{
+			    background-color: #fff; 
+			    color: #1e3c72;	    		     
+			}
+
+			.hero__img{
+			    width: 100%;
+			}
+			.modal{
+			    position: fixed;
+			    top: 0;
+			    left: 0;
+			    right: 0;
+			    bottom: 0;
+			    background-color: #111111bd;
+			    display: flex;
+			    opacity: 0;
+			    pointer-events: none;
+			    transition: opacity .4s .7s;
+			    --transform: translateY(-100vh);
+			    --transition: transform .8s;
+			}
+
+			.modal--show{
+			    opacity: 1;
+			    pointer-events: unset;
+			    transition: opacity .4s;
+			    --transform: translateY(0);
+			    --transition: transform .6s .6s;
+			}
+
+			.modal__container{
+			    margin: auto; /*auto*/		    
+			    width: 90%;
+			    max-width: 58%; /*900px - 55%*/
+			    max-height: 90%; /*90%*/
+			    /*background-color: #fff;*/
+			    border-radius: 6px;
+			    padding: 2em; /* padding: 3em 2.5em;*/
+			    display: grid;
+			    gap: 0.3em;
+			    place-items: center;
+			    grid-auto-columns: 100%;
+			    transform: var(--transform);
+			    transition:var(--transition);
+
+			    margin-top: 0px;
+			    padding-top: 20px;
+			}	
+
+			.modal__title{
+			    font-size: 2.5rem;
+			}
+
+			.modal__paragraph{
+			    margin-bottom: 5px;
+			}
+
+			.modal__img{
+			    width: 110%;
+			    max-width: 3000px;
+			}
+
+			.modal__close{
+			    color: white;
+			    background-color: #2A2727;	      
+			    padding: 0.8em 3em; /*padding: 1em 3em;*/
+			    /*border: 1px solid ;*/
+			    border-radius: 6px;
+			    display: inline-block;
+			    font-weight: 100 bold;
+			    transition: background-color .3s;
+			}
+
+			.modal__close:hover{
+			    color: white;
+			    background-color: black;
+			}
+
+			/****************************/
+		    .tablet {
+		        display: none;
+		    }
+		    .movil {
+		        display: none;
+		    }
+		}
+
+		/********************************************/
 		
 		p{
 			text-align: justify;
@@ -51,104 +205,7 @@
 			text-decoration: none;
 		}
 
-		/*modal*/
-
-		.hero__cta{
-
-		    text-decoration: none;
-		    color: #000000;
-		    padding: 2.5px 25px;
-		    border: 1px solid;
-		    border-radius: 6px;
-		    display: inline-block;
-		    text-align: center;	
-		   	width: 100%;
-		    transition: background-color .3s;
-		    font-weight: 400;		    
-		    	  			
-  			/*  			
-  			 
-  			*/
-		}
-
-		.hero__cta:hover{
-		    background-color: #fff; 
-		    color: #1e3c72;	    		     
-		}
-
-		.hero__img{
-		    width: 100%;
-		}
-		.modal{
-		    position: fixed;
-		    top: 0;
-		    left: 0;
-		    right: 0;
-		    bottom: 0;
-		    background-color: #111111bd;
-		    display: flex;
-		    opacity: 0;
-		    pointer-events: none;
-		    transition: opacity .4s .7s;
-		    --transform: translateY(-100vh);
-		    --transition: transform .8s;
-		}
-
-		.modal--show{
-		    opacity: 1;
-		    pointer-events: unset;
-		    transition: opacity .4s;
-		    --transform: translateY(0);
-		    --transition: transform .6s .6s;
-		}
-
-		.modal__container{
-		    margin: auto; /*auto*/		    
-		    width: 90%;
-		    max-width: 58%; /*900px - 55%*/
-		    max-height: 90%; /*90%*/
-		    /*background-color: #fff;*/
-		    border-radius: 6px;
-		    padding: 2em; /* padding: 3em 2.5em;*/
-		    display: grid;
-		    gap: 0.3em;
-		    place-items: center;
-		    grid-auto-columns: 100%;
-		    transform: var(--transform);
-		    transition:var(--transition);
-
-		    margin-top: 0px;
-		    padding-top: 20px;
-		}	
-
-		.modal__title{
-		    font-size: 2.5rem;
-		}
-
-		.modal__paragraph{
-		    margin-bottom: 5px;
-		}
-
-		.modal__img{
-		    width: 110%;
-		    max-width: 3000px;
-		}
-
-		.modal__close{
-		    color: white;
-		    background-color: #2A2727;	      
-		    padding: 0.8em 3em; /*padding: 1em 3em;*/
-		    /*border: 1px solid ;*/
-		    border-radius: 6px;
-		    display: inline-block;
-		    font-weight: 100 bold;
-		    transition: background-color .3s;
-		}
-
-		.modal__close:hover{
-		    color: white;
-		    background-color: black;
-		}
+		
 
 		/*HOVER IMG*/
 	*{
@@ -210,6 +267,13 @@
 	</style>
 </head>
 <body>
+
+	<div class="resolucion">
+        <div class="desktop"></div>
+        <div class="tablet"></div>
+        <div class="movil"></div>
+    </div>
+
 	<header> <!-- id= "up" -->		
 		<section class="container border-top border-danger">
 			<article class="row">
@@ -279,7 +343,8 @@
 
 							<!--
 								FACULTAD - CURSOS ACTUAL SEGURIDAD INFORMÁTICA
-							-->
+							-->	
+
 
 							<a class="d-sm-block d-md-none btn btn-outline-primaty" href="#up">Ir al Inicio</a>
 						</div>
@@ -405,7 +470,7 @@
     </section>  
     <script src="js/main.js"></script>
 
-    <section>
+    <section class="desktop">
     	<div class="ctr-accordion">
             <div class="tab">
                 <img src="IMG/Cursos/1CursoAP WebN1.jpg">
@@ -424,9 +489,6 @@
                 <img src="IMG/Cursos/Ciberseguridad-ED15.png">
             </div>                        
        </div>
-   </section>
-
-   <section>
    		<div class="ctr-accordion"> 
    			<div class="tab">
                 <img src="IMG/Cursos/Introducción Ciberseguridad.png">
@@ -444,9 +506,6 @@
                 <img src="IMG/Eventos/7MegaTestingWee.jpg">
             </div>
    		</div>
-   </section>
-
-   <section>
        <div class="ctr-accordion">            
             <div class="tab">
                 <img src="IMG/Eventos/8Participación al Taller Machine Learning con Python.jpg">
@@ -467,10 +526,137 @@
                 <img src="IMG/Eventos/Consultor SAP.jpg">
             </div>
        </div>
-    </section>   
+    </section>
 
+    <section class="movil">
+    	<div class="ctr-accordion">
+    		<div class="tab">
+                <img src="IMG/Diploma.png">
+            </div>
+            <div class="tab">
+                <img src="IMG/Cursos/1CursoAP WebN1.jpg">
+                <!--<img href="#" src="IMG/Cursos/1CursoAP WebN1.jpg" alt="1CursoAP WebN1" class="modal__img">-->
+            </div>
+            <div class="tab">
+                <img src="IMG/Cursos/2CursoAP WebN2.jpg">
+            </div>                                  
+       </div>
+       <div class="ctr-accordion">
+       		<div class="tab">
+                <img src="IMG/Cursos/3CursoAP WebN3.jpg">
+            </div>
+            <div class="tab">
+                <img src="IMG/Cursos/4CursoAP WebN3.jpg">
+            </div>
+            <div class="tab">
+                <img src="IMG/Cursos/Ciberseguridad-ED15.png">
+            </div>  
+       </div>
+   		<div class="ctr-accordion"> 
+   			<div class="tab">
+                <img src="IMG/Cursos/Introducción Ciberseguridad.png">
+            </div>
+            <div class="tab">
+                <img src="IMG/Cursos/Introducción Tecnologías.png">
+            </div>
+            <div class="tab">
+                <img src="IMG/Eventos/5CyberSecurityRevolutión.jpg">
+            </div>           
+   		</div>
+   		<div class="ctr-accordion">
+   			 <div class="tab">
+                <img src="IMG/Eventos/6Data Science - AWS (Amazon).jpg">
+            </div>
+            <div class="tab">
+                <img src="IMG/Eventos/7MegaTestingWee.jpg">
+            </div>
+            <div class="tab">
+                <img src="IMG/Eventos/pentesting.jpg">
+            </div>
+            <div class="tab">
+                <img src="IMG/Eventos/Consultor SAP.jpg">
+            </div>
+   		</div>
+       <div class="ctr-accordion">            
+            <div class="tab">
+                <img src="IMG/Eventos/8Participación al Taller Machine Learning con Python.jpg">
+            </div>
+            <div class="tab">
+                <img src="IMG/Eventos/9Participación AmaliaConf 2020.jpg">
+            </div>            
+            <div class="tab">
+                <img src="IMG/Eventos/Peritaje Forence.jpg">
+            </div>
+            <div class="tab">
+                <img src="IMG/Eventos/Quality Assurance.jpg">
+            </div>            
+       </div>
+    </section>
 
-
+    <section class="tablet">
+    	<div class="ctr-accordion">
+    		<div class="tab">
+                <img src="IMG/Diploma.png">
+            </div>
+            <div class="tab">
+                <img src="IMG/Cursos/1CursoAP WebN1.jpg">
+                <!--<img href="#" src="IMG/Cursos/1CursoAP WebN1.jpg" alt="1CursoAP WebN1" class="modal__img">-->
+            </div>
+            <div class="tab">
+                <img src="IMG/Cursos/2CursoAP WebN2.jpg">
+            </div>                                  
+       </div>
+       <div class="ctr-accordion">
+       		<div class="tab">
+                <img src="IMG/Cursos/3CursoAP WebN3.jpg">
+            </div>
+            <div class="tab">
+                <img src="IMG/Cursos/4CursoAP WebN3.jpg">
+            </div>
+            <div class="tab">
+                <img src="IMG/Cursos/Ciberseguridad-ED15.png">
+            </div>  
+       </div>
+   		<div class="ctr-accordion"> 
+   			<div class="tab">
+                <img src="IMG/Cursos/Introducción Ciberseguridad.png">
+            </div>
+            <div class="tab">
+                <img src="IMG/Cursos/Introducción Tecnologías.png">
+            </div>
+            <div class="tab">
+                <img src="IMG/Eventos/5CyberSecurityRevolutión.jpg">
+            </div>           
+   		</div>
+   		<div class="ctr-accordion">
+   			 <div class="tab">
+                <img src="IMG/Eventos/6Data Science - AWS (Amazon).jpg">
+            </div>
+            <div class="tab">
+                <img src="IMG/Eventos/7MegaTestingWee.jpg">
+            </div>
+            <div class="tab">
+                <img src="IMG/Eventos/pentesting.jpg">
+            </div>
+            <div class="tab">
+                <img src="IMG/Eventos/Consultor SAP.jpg">
+            </div>
+   		</div>
+       <div class="ctr-accordion">            
+            <div class="tab">
+                <img src="IMG/Eventos/8Participación al Taller Machine Learning con Python.jpg">
+            </div>
+            <div class="tab">
+                <img src="IMG/Eventos/9Participación AmaliaConf 2020.jpg">
+            </div>            
+            <div class="tab">
+                <img src="IMG/Eventos/Peritaje Forence.jpg">
+            </div>
+            <div class="tab">
+                <img src="IMG/Eventos/Quality Assurance.jpg">
+            </div>            
+       </div>
+    </section>         
 
 	<footer class="container bg-dark text-white">
 
