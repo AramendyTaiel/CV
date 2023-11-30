@@ -22,11 +22,6 @@
 		/**Movil**/
 
 		@media (max-width: 767px) {
-			#cod{
-				display: none;
-			}
-
-
 			/**********************/
 		    .desktop {
 		        display: none;
@@ -34,16 +29,31 @@
 		    .tablet {
 		        display: none;
 		    }
+			/**********************/
+
+			#cod{
+				display: none;
+			}
+			 
+			.tab{
+			    position: relative; /*relative*/
+			    width: 34%;
+			    height: inherit;
+			   	padding: 10px;
+	    		margin-left: 10px;
+			    background: rgb(150,150,150);
+			    cursor: pointer;
+			    transition: width .5s ease;
+			    border-radius: 5px;
+			}
+
+			
 		}
 
 
 		/**Tablet**/
 
 		@media (min-width: 768px) and (max-width: 990px) {
-			#cod{
-				display: none;
-			}
-
 
 			/****************************/
 		    .desktop {
@@ -52,12 +62,39 @@
 		    .movil {
 		        display: none;
 		    }
+		    /****************************/
+
+			#cod{
+				display: none;
+			}
+
+			.tab{
+			    position: relative; /*relative*/
+			    width: 34%;
+			    height: inherit;
+			    padding: 10px;
+	    		margin-left: 10px;
+			    background: rgb(150,150,150);
+			    cursor: pointer;
+			    transition: width .5s ease;
+			    border-radius: 5px;
+			}	
+			
 		}
 
 
 		/**Escritorio**/
 
 		@media (min-width: 991px) {
+
+			/****************************/
+		    .tablet {
+		        display: none;
+		    }
+		    .movil {
+		        display: none;
+		    }
+		    /****************************/
 
 			/*MODAL*/
 
@@ -156,13 +193,18 @@
 			    background-color: black;
 			}
 
-			/****************************/
-		    .tablet {
-		        display: none;
-		    }
-		    .movil {
-		        display: none;
-		    }
+			.tab{
+		    position: relative; /*relative*/
+		    width: 20%;
+		    height: inherit;
+		    padding: 20px;
+		    background: rgb(150,150,150);
+		    cursor: pointer;
+		    transition: width .5s ease;
+		    border-radius: 5px;
+			}
+
+			
 		}
 
 		/********************************************/
@@ -185,7 +227,23 @@
 		#datos_p{
 			text-align: center;
 			margin-top: 15px; 
-		}}
+		}
+
+		.tab{
+	    position: relative; /*relative*/
+	    width: 34%;
+	    height: inherit;
+	    padding: 10px;
+	    margin-left: 10px;
+	    background: rgb(150,150,150);
+	    cursor: pointer;
+	    transition: width .5s ease;
+	    border-radius: 5px;
+		}
+
+
+	}
+
 		.center{
 			text-align: center;
 		}
@@ -229,18 +287,7 @@
 	    overflow: hidden;
 	    margin: 30px auto;
 	}
-	 
-	.tab{
-	    position: relative; /*relative*/
-	    width: 20%;
-	    height: inherit;
-	    padding: 20px;
-	    background: rgb(150,150,150);
-	    cursor: pointer;
-	    transition: width .5s ease;
-	    border-radius: 5px;
-	}
-	 
+	 	 
 	.tab img{
 	    position: absolute;
 	    top: 0;
@@ -260,7 +307,11 @@
 	}
 	 
 	.tab:hover{
-	    width: 100%;
+	    width: 500%;
+	}
+
+	#tabC:hover{		
+	    width: 80%;
 	}
 
 
@@ -356,15 +407,14 @@
 					<div class="card">
 						<div class="card-body">
 							<h5 class="card-title text-danger" id="ancla2">Experiencia Laboral:</h5>							
-							<ul class="card-text">	
-								<li>Construcción e instalación de muebles.</li>
-								<li>Instalaciones y reparaciones eléctricas en hogares.</li>
-								<li>Reparación de componentes electrónicos.</li>	
+							<ul class="card-text">
 								<li><b>Actualidad:</b> <a href='https://www.instagram.com/taiel.tic/' target="_blank"><i class="fa-brands fa-instagram"></i></a> Service Técnico (Autónomo): Armado, reparación y mantenimiento de computadoras portátiles y de escritorio.</li> <!--(Hardware & Software)-->
 								  
 								<li><b>Actualidad:</b> <a href='https://github.com/AramendyTaiel' target="_blank"><i class="fa-brands fa-github"></i></a> Programación y administración de páginas web.</li>
-
-
+								<br>
+								<li>Instalaciones y reparaciones eléctricas en hogares.</li>
+								<li>Construcción e instalación de muebles.</li>
+								<li>Reparación de componentes electrónicos.</li>
 
 							</ul>
 							<a class="d-sm-block d-md-none btn btn-outline-primaty" href="#up">Ir al Inicio </a>
@@ -424,29 +474,31 @@
 					<div class="card">
 						<div class="card-body">
 							<h5 class="text-title text-danger" id="ancla4">Cursos:</h5>
-							<ul class="card-text">
-								<li><b>Agosto - Semptiembre 2018</b> Aprendé Programando. Ministerio de Educación e Innovación de la Ciudad Autónoma de Buenos Aires. Conocimientos adquiridos: <b>HTML, CSS y Bootstrap</b>.</li>
-								<li><b>Agosto - Semptiembre 2019</b> Aprendé Programando. Ministerio de Educación e Innovación de la Ciudad Autónoma de Buenos Aires. Conocimientos adquiridos: <b>JavaScript</b>. </li>
-								<li><b>Agosto - Semptiembre 2020</b> Aprendé Programando. Ministerio de Educación e Innovación de la Ciudad Autónoma de Buenos Aires. Conocimientos adquiridos: <b>Back-End</b>. </li>
-								<li><b>Agosto - Semptiembre 2020</b> Aprendé Programando. Ministerio de Educación e Innovación de la Ciudad Autónoma de Buenos Aires. Conocimientos adquiridos: <b>Front-End</b>. </li>
-								<li><b>Mayo - Agosto 2023</b> Fundación Movistar - Conecta Empleo. Curso avanzado de <b>Ciberseguridad</b>. 
-									Conocimientos adquiridos: Redes y manejo del Packet Tracer, aplicaciones técnicas, seguridad Wireless, Kali-Linux, Python orientado, Criptografía y esteganografía, Análisis forense, Hacking ético, Metasploit, entre otros.
-								</li>
+							<ul class="card-text">								
+
 								<li>
-									<b>Junio - Julio 2023</b> Consultora ARPAC-IT - Curso intensivo de <b>OSINT</b>:
-									Conceptos y fuentes abiertas; Manejo de tools OSINT; Análisis de la información; Métodos de búsqueda.
+									<b>Julio - Actualidad 2023</b> Programación Codo a Codo 3.0. Ministerio de Educación e Innovación de la Ciudad Autónoma de Buenos Aires. Conocimientos adquiridos: <b>Node.js</b>.
+								</li>
+
+								<li>
+									<b>Octubre - Noviembre 2023</b> Consultora ARPAC-IT - Curso avanzado de <b>Análisis Forense</b>:
+									Fundamentos Metodológicos; Análisis y procesamiento de evidencias; Forense Linux&Redes; Esteganografía y análisis de estructura de datos; Forense Dispositivos Móviles ; Análisis profesional de RAM; Métodos de recuperación; Busqueda de pistas.						
 								</li>
 								<li>
 									<b>Agosto - Septiembre 2023</b> Consultora ARPAC-IT - Curso avanzado de <b>Ethical Hacking</b>:
 									Fundamentos Metodológicos; Etapa de Reconocimiento / Footprinting; Etapa de Escaneo / Análisis de Vulnerabilidades; Etapa de Enumeración / Análisis de tráfico; System Hacking / DOS; Hacking Web / Scripting; Ingeniería Social; Metasploit.									
 								</li>
 								<li>
-									<b>Octubre - Actualidad 2023</b> Consultora ARPAC-IT - Curso avanzado de <b>Análisis Forense</b>:
-									Fundamentos Metodológicos; Análisis y procesamiento de evidencias; Forense Linux&Redes; Esteganografía y análisis de estructura de datos; Forense Dispositivos Móviles ; Análisis profesional de RAM; Métodos de recuperación; Busqueda de pistas.						
+									<b>Junio - Julio 2023</b> Consultora ARPAC-IT - Curso intensivo de <b>OSINT</b>:
+									Conceptos y fuentes abiertas; Manejo de tools OSINT; Análisis de la información; Métodos de búsqueda.
 								</li>
-								<li>
-									<b>Julio - Actualidad 2023</b> Programación Codo a Codo 3.0. Ministerio de Educación e Innovación de la Ciudad Autónoma de Buenos Aires. Conocimientos adquiridos: <b>Node.js</b>.
+								<li><b>Mayo - Agosto 2023</b> Fundación Movistar - Conecta Empleo. Curso avanzado de <b>Ciberseguridad</b>. 
+									Conocimientos adquiridos: Redes y manejo del Packet Tracer, aplicaciones técnicas, seguridad Wireless, Kali-Linux, Python orientado, Criptografía y esteganografía, Análisis forense, Hacking ético, Metasploit, entre otros.
 								</li>
+								<li><b>Agosto - Semptiembre 2020</b> Aprendé Programando. Ministerio de Educación e Innovación de la Ciudad Autónoma de Buenos Aires. Conocimientos adquiridos: <b>Front-End</b>. </li>
+								<li><b>Agosto - Semptiembre 2020</b> Aprendé Programando. Ministerio de Educación e Innovación de la Ciudad Autónoma de Buenos Aires. Conocimientos adquiridos: <b>Back-End</b>. </li>
+								<li><b>Agosto - Semptiembre 2019</b> Aprendé Programando. Ministerio de Educación e Innovación de la Ciudad Autónoma de Buenos Aires. Conocimientos adquiridos: <b>JavaScript</b>. </li>
+								<li><b>Agosto - Semptiembre 2018</b> Aprendé Programando. Ministerio de Educación e Innovación de la Ciudad Autónoma de Buenos Aires. Conocimientos adquiridos: <b>HTML, CSS y Bootstrap</b>.</li>
 
 							</ul>
 							<a class="d-sm-block d-md-none btn btn-outline-primaty" href="#up">Ir al Inicio </a>
@@ -485,7 +537,7 @@
             <div class="tab">
                 <img src="IMG/Cursos/4CursoAP WebN3.jpg">
             </div>
-            <div class="tab">
+            <div class="tab" id="tabC">
                 <img src="IMG/Cursos/Ciberseguridad-ED15.png">
             </div>                        
        </div>
@@ -548,7 +600,7 @@
             <div class="tab">
                 <img src="IMG/Cursos/4CursoAP WebN3.jpg">
             </div>
-            <div class="tab">
+            <div class="tab"id="tabC">
                 <img src="IMG/Cursos/Ciberseguridad-ED15.png">
             </div>  
        </div>
@@ -613,7 +665,7 @@
             <div class="tab">
                 <img src="IMG/Cursos/4CursoAP WebN3.jpg">
             </div>
-            <div class="tab">
+            <div class="tab"id="tabC">
                 <img src="IMG/Cursos/Ciberseguridad-ED15.png">
             </div>  
        </div>
